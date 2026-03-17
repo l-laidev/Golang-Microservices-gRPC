@@ -1,6 +1,9 @@
 run-orders:
 	@go run ./services/orders/
 
+run-kitchen:
+	@go run ./services/kitchen
+
 gen:
 	@protoc \
 		--proto_path=protobuf "protobuf/orders.proto" \
